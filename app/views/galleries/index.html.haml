@@ -1,0 +1,8 @@
+%p#notice= notice
+.container#galerryimagecontainer
+ - @galleries.each do |gallery|
+  .col-xs-12.col-sm-6.col-md-4.col-lg-3#galerryimage
+   - if gallery.image.present?
+    = link_to gallery do
+     = image_tag gallery.image.thumb.url, class: 'img-thumbnail'
+   = link_to gallery.name, gallery, id: "namegallery"

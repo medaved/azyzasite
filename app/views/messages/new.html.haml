@@ -1,0 +1,19 @@
+%row.text-center
+ .col-lg-12.text-center
+  %img#paperairplane(src="media/paperairplane.png")
+  %div.container#contacts
+   %p Для получения информации, сотрудничестве, индивидуальных заказов картин, пожалуйста напишите мне.
+  = form_for @message, url: contact_path do |message_form|
+   %fieldset
+    %div.field#cont_name
+     %span.glyphicon.glyphicon-user
+     = message_form.text_field :name, class: "input", size: "50x5", placeholder: "Name"
+    %div.field#cont_email
+     %span.glyphicon.glyphicon-envelope
+     = message_form.email_field :email, class: "input", size: "50x5", placeholder: "Email"
+
+     %div.field#cont_text
+     = message_form.text_area :content, size: "52x5", class: "input", placeholder: "Message"
+
+    %div.container
+     = message_form.submit :button, class: "btn btn-default", value: "Send", size: "7x50"

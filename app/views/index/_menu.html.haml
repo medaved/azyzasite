@@ -1,0 +1,15 @@
+%div.container
+  %div#navbar.navbar-collapse.collapse
+    %ul.nav.navbar-nav
+      %li
+        = link_to 'home', root_path
+      %li
+        = link_to 'gallery', [:galleries]
+      %li
+        %a{:href => "https://www.behance.net/Azyza", :target => "_blank"} blog
+      %li
+        = link_to 'faq', faq_url
+      %li
+        = link_to 'contacts', contacts_url
+      %li
+        %a{:href =>"https://www.etsy.com/shop/Azyza", :target => "_blank"} shop

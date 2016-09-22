@@ -1,0 +1,51 @@
+$main-color: #e5e5e5;
+#contacts{
+  p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+fieldset{
+  padding: 4px 4px;
+
+  #cont_name{
+
+    input {
+      padding: 4px 4px;
+      background: $main-color;
+    }
+  }
+  #cont_email{
+    input {
+      padding: 4px 4px;
+      background: $main-color;
+    }
+  }
+
+  textarea{
+    background: $main-color;
+  }
+}
+
+
+#paperairplane {
+  width: auto;
+  height: auto;
+
+}
+.input {
+  border: 0px;
+}
+
+.btn-default {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  width: 100px;
+  height: 40px;
+  background: $main-color;
+  position: relative;
+  left: 170px;
+}

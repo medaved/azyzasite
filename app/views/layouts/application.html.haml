@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %title= @title
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+
+  %body.container-fluid
+  = stylesheet_link_tag    'application', media: 'all', 'lightbox': 'reload'
+  = javascript_include_tag 'application', 'lightbox': 'reload'
+
+  %div.container-fluid.row.logo_image
+    = image_tag 'logo.png'
+  %div.container-fluid.row
+    = render "index/menu"
+
+  %div.container-fliud
+    %br
+    = render "index/section_name"
+    %br
+    %br
+    = yield
+    %footer
+    %hr
+    = render "index/profiles_social"

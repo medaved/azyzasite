@@ -1,0 +1,120 @@
+@font-face {
+  font-family: mainfont;
+  src: font-url(font-path('main.ttf'));
+}
+$main-color: #e5e5e5;
+$main-font: 1.6em/1.1 mainfont;
+$main-font-faq: 1.6em/1.1 Georgia;
+/* Main layout options pages*/
+.logo_image {
+  img{
+    width: 50%;
+  }
+  padding: 6px 0px;
+  text-align: center;
+  float: none;
+}
+.navbar-nav {
+  float: none;
+  text-align: center;
+}
+.navbar-nav li {
+  font: $main-font;
+  font-size: 15px;
+  float: none;
+  display: inline-block;
+}
+.pluso {
+  size: 85px;
+  padding: 0px 0;
+  color: #999;
+  text-align: center;
+  border-top: 0px solid $main-color;
+}
+hr {
+  border-top: 2px solid $main-color;
+}
+
+.main_image img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.body {
+  font-family: $main-font;
+}
+/*line section name*/
+.section_name {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font: $main-font;
+  color: $main-color;
+  font-size: 15px;
+  padding: .2em 0;
+  text-shadow: 0 1px $main-color;
+}
+.section_name:before,
+.section_name:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: $main-color;
+  background-clip: content-box;
+  border-bottom: 1px solid $main-color;
+}
+.section_name:before {
+  left: -.5em;
+  margin: 0 0 0 -50%;
+}
+.section_name:after {
+  left: .5em;
+  margin: 0 -50% 0 0;
+}
+/*end line section name*/
+.img-thumbnail {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 400px;
+  height: 210px;
+ border: 1px solid #ddd;
+}
+
+
+#galerryimagecontainer{
+  max-width: 960px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#galerryimage{
+  position: relative;
+  display: block;
+  margin-top: 15px;
+ }
+.gallery-feed {
+  position: relative;
+  max-width: 960px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-responsive {
+  position: relative;
+}
+
+
+#contacts p{
+  font: $main-font-faq;
+  font-size: 13px;
+  font-style: oblique;
+  margin-top: 10px;
+}
