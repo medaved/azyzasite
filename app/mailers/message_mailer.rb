@@ -1,8 +1,8 @@
 class MessageMailer < ApplicationMailer
-  default from: 'medavedik@yandex.ru'
+  default from: 'noreplyazyza@gmail.com'
   def new_message(message)
     @message = message
-
-    mail subject: "Message from #{message.name}"
+    mail to: 'noreplyazyza@gmail.com',
+         subject: "Message from #{message.name}"
   end
 end

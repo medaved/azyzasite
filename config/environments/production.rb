@@ -3,13 +3,13 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address: 'smtp.yandex.ru',
-      port: 465,
-      domain: Rails.application.secrets.yandexdomain,
-      authentication: 'plain',
+      address:             'smtp.gmail.com',
+      port:                 587,
+      domain:               Rails.application.secrets.mail_user_domain,
+      user_name:            Rails.application.secrets.mail_user_name,
+      password:             Rails.application.secrets.mail_user_password,
+      authentication:       :login,
       enable_starttls_auto: true,
-      user_name: Rails.application.secrets.yandex_user_name,
-      password: Rails.application.secrets.yandex_user_password,
   }
   # Code is not reloaded between requests.
   config.cache_classes = true

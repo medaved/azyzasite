@@ -20,8 +20,8 @@
 # Ignore Byebug command history file.
 config/deploy/
 .byebug_history
-database.yml
-secrets.yml
+config/database.yml
+config/secrets.yml
 shared/
 doc/
 *.swp

@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'medavedik@yandex.ru'
+  default from: 'noreplyazyza@gmail.com'
   layout 'mailer'
   def new_message(message)
     @message = message

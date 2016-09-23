@@ -49,6 +49,7 @@ namespace :deploy do
       execute "mkdir #{shared_path}/system"
 
       upload!('shared/database.yml', "#{shared_path}/config/database.yml")
+      upload!('shared/secrets.yml', "#{shared_path}/config/secrets.yml")
 
 
 
@@ -73,6 +74,7 @@ namespace :deploy do
   task :symlink do
     on roles(:all) do
       execute "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+      execute "ln -s #{shared_path}/config/secrets.yml #{release_path}/config/secrets.yml"
     end
   end
 
