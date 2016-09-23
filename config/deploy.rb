@@ -79,7 +79,7 @@ namespace :deploy do
    desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      "thin restart /etc/thin#{application}.yml"
+      "thin restart -C /etc/thin#{application}.yml"
     end
   end
 
