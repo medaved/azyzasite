@@ -15,10 +15,6 @@ class IndexController < ApplicationController
     @title = 'Azyza | Галерея'
     @section = 'gallery'
   end
-  def shop
-    @title = 'Azyza | Магазин'
-    @section = 'shop'
-  end
   def blog
     @title = 'Azyza | Блог'
     @section = 'blog'
