@@ -17,10 +17,8 @@ gem 'mini_magick'
 
 gem 'pg' , '~> 0.18'
 gem 'page_title_helper', git: 'git://github.com/lwe/page_title_helper.git'
-gem 'rails_12factor', group: :production
 
 gem 'rails', '~> 5.0.0'
-gem 'rails_config'
 gem 'rails_admin_acts_as_list' # must be before rails_admin
 gem 'rails_admin', github: 'medaved/rails_admin'
 gem 'rack-pjax', github: 'medaved/rack-pjax'
@@ -39,7 +37,6 @@ group :development, :test do
 end
 
 group :production do
-  gem 'thin'
   gem 'executable-hooks'
 end
 
