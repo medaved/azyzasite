@@ -22,6 +22,7 @@ gem 'rails', '~> 5.0.0'
 gem 'rails_admin_acts_as_list' # must be before rails_admin
 gem 'rails_admin', github: 'medaved/rails_admin'
 gem 'rack-pjax', github: 'medaved/rack-pjax'
+gem 'rails_12factor', group: :production
 gem 'remotipart', github: 'mshibuya/remotipart'
 
 gem 'sass-rails', '~> 5.0'
