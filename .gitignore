@@ -34,4 +34,4 @@ doc/
 *.mp4
 .env
 public/galleries/*
-shared/galleries/*
+
