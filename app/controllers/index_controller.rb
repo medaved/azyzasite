@@ -1,22 +1,13 @@
 class IndexController < ApplicationController
   def home
-    @title = 'Azyza | Главная'
-    @section = 'home'
+    #static page
   end
-  def contacts
-    @title = 'Azyza | Contacts'
-    @section = 'contacts'
-  end
+
   def faq
-    @title = 'Azyza | F.A.Q.'
     @section = 'faq'
   end
-  def gallery
-    @title = 'Azyza | Галерея'
-    @section = 'gallery'
-  end
+
   def blog
-    @title = 'Azyza | Блог'
-    @section = 'blog'
+    #w.i.p
   end
 end
