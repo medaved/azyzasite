@@ -2,7 +2,7 @@
  .col-lg-12.text-center
   %img#paperairplane(src="media/paperairplane.png")
   %div.container#contacts
-   %p Для получения информации, сотрудничестве, индивидуальных заказов картин, пожалуйста напишите мне.
+   %p= t('.help_text')
   = form_for @message, url: contact_path do |message_form|
    %fieldset
     %div.field#cont_name
@@ -17,3 +17,5 @@
 
     %div.container
      = message_form.submit :button, class: "btn btn-default", value: "Send", size: "7x50"
+
+  %hr

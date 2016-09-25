@@ -1,3 +1,6 @@
+@import "compass/css3/animation";
+@import "compass/css3";
+
 $main-font: 1.6em/1.1 mainfont;
 $main-font-faq: 1.6em/1.1 Georgia;
 #faq blockquote {
@@ -6,9 +9,9 @@ $main-font-faq: 1.6em/1.1 Georgia;
     a{
       -moz-text-decoration-style: dotted;
       -webkit-text-decoration-style: dotted;
+      text-decoration-style: dotted;
       font-family: $main-font;
       text-decoration: underline;
-      text-decoration-style: dotted;
       color: #000;
       &:hover {
         color: #fff;
@@ -29,20 +32,22 @@ $main-font-faq: 1.6em/1.1 Georgia;
     }
   }
 }
-#faq-img img{
-  position: relative;
-  display: block;
+#faq-img {
+  img {
+    position: relative;
+    display: block;
+  }
+  hr {
+    width: 320px;
+  }
+  p {
+    font: $main-font-faq;
+    font-size: 13px;
+    font-style: oblique;
+    margin-top: 10px;
+  }
 }
-#faq-img hr{
-  width: 320px;
-}
-#faq-img p{
-  font: $main-font-faq;
-  font-size: 13px;
-  font-style: oblique;
-  margin-top: 10px;
-}
-#faq-img #faq-img-inst{
+#faq-img-inst{
   width: 50%;
   height: 50%;
   position: relative;
@@ -61,9 +66,8 @@ $main-font-faq: 1.6em/1.1 Georgia;
 }
 
 div {
-  animation: move 1s ease-in-out 0.5s 2 alternate;
-  -moz-animation: move 1s ease-in-out 0.5s 2 alternate;
-  -webkit-animation: move 1s ease-in-out 0.5s 2 alternate;
+  /*noinspection SassScssResolvedByNameOnly*/
+  @include animation(move 1s ease-in-out 0.5s 2 alternate);
 }
 
 #slider {
@@ -117,7 +121,7 @@ div {
 }
 
 #slider li.sixthanimation {
-  animation: cyclefive 20s linear infinite;
+  animation: cyclesix 20s linear infinite;
 }
 
 /* Анимация */

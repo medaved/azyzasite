@@ -2,18 +2,13 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
-    @title = 'Azyza | Contacts'
-    @section = 'contacts'
   end
 
   def create
     @message = Message.new(message_params)
-    @title = 'Azyza | Contacts'
-    @section = 'contacts'
-
     if @message.valid?
       MessageMailer.new_message(@message).deliver
-      redirect_to contact_path, notice: "Your messages has been sent."
+      redirect_to contact_path
     else
       flash[:alert] = "An error occurred while delivering this message."
       render :new

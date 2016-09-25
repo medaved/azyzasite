@@ -8,6 +8,9 @@ set :rvm_type, :user
 set :rvm_ruby_version, '2.3.0-p0'
 set :deploy_to, '/var/www/apps/AzyzaSite'
 
+
+set :linked_dirs, %w{public/galliries}
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -75,6 +78,7 @@ namespace :deploy do
     on roles(:all) do
       execute "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
       execute "ln -s #{shared_path}/config/secrets.yml #{release_path}/config/secrets.yml"
+      execute "ln -s #{shared_path}/galleries/ #{release_path}/public/galleries"
     end
   end
 

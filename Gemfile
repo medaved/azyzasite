@@ -7,6 +7,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'carrierwave'
 gem 'carrierwave-processing'
 gem 'coffee-rails', '~> 4.2'
+gem 'compass-rails'
 
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'

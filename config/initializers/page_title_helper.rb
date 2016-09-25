@@ -1,0 +1,1 @@
+PageTitleHelper.formats[:default] = ":title | :app"
