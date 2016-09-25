@@ -78,14 +78,13 @@ namespace :deploy do
     on roles(:all) do
       execute "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
       execute "ln -s #{shared_path}/config/secrets.yml #{release_path}/config/secrets.yml"
-      execute "ln -s #{shared_path}/galleries/ #{release_path}/public/galleries"
     end
   end
 
    desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      "thin restart -C /etc/thin#{application}.yml"
+      "thin restart -C /etc/thin/#{application}.yml"
     end
   end
 

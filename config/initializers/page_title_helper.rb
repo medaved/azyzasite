@@ -1,1 +1,1 @@
-PageTitleHelper.formats[:default] = ":title | :app"
+PageTitleHelper.formats[:default] = ":title | AZYZA"
