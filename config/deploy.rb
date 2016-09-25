@@ -9,7 +9,7 @@ set :rvm_ruby_version, '2.3.0-p0'
 set :deploy_to, '/var/www/apps/AzyzaSite'
 
 
-set :linked_dirs, %w{public/galliries}
+set :linked_dirs, %w{public/galleries}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
