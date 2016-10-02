@@ -1,4 +1,6 @@
 $main-color: #e5e5e5;
+$main-font-faq: 1.6em/1.1 Georgia;
+
 #contacts{
   p{
     margin-top: 25px;
@@ -48,4 +50,8 @@ fieldset{
   background: $main-color;
   position: relative;
   left: 170px;
+}
+.alert {
+  font: $main-font-faq ;
+  color: #CCFFCC;
 }
