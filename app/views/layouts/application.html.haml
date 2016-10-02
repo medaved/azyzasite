@@ -13,6 +13,7 @@
   = javascript_include_tag 'application', 'lightbox': 'reload'
 
   %div.container-fluid.row.logo_image
+    = render "layouts/metrika"
     = image_tag 'logo.jpg'
   %div.container-fluid.row
     = render "index/menu"
@@ -26,3 +27,4 @@
     %footer
     %hr
     = render "index/profiles_social"
+
