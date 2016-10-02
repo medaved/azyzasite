@@ -9,7 +9,7 @@ set :rvm_ruby_version, '2.3.0-p0'
 set :deploy_to, '/var/www/apps/AzyzaSite'
 
 
-set :linked_dirs, %w{public/galleries}
+#set :linked_dirs, %w{public/galleries}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -49,6 +49,7 @@ namespace :deploy do
       execute "mkdir  /var/www/apps/#{application}/run/"
       execute "mkdir  /var/www/apps/#{application}/log/"
       execute "mkdir  /var/www/apps/#{application}/socket/"
+      execute "mkdir  /var/www/apps/#{application}/shared/galleries"
       execute "mkdir #{shared_path}/system"
 
       upload!('shared/database.yml', "#{shared_path}/config/database.yml")
@@ -78,7 +79,7 @@ namespace :deploy do
     on roles(:all) do
       execute "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
       execute "ln -s #{shared_path}/config/secrets.yml #{release_path}/config/secrets.yml"
-      execute "ln -s #{shared_path}/galleries #{release_path}/public/galleries"
+      execute "ln -sf #{shared_path}/galleries #{release_path}/public/"
     end
   end
 

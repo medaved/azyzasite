@@ -18,4 +18,7 @@
     %div.container
      = message_form.submit :button, class: "btn btn-default", value: "Send", size: "7x50"
 
+   - flash.each do |key, value|
+    %div{:class => "alert alert-#{key}"}= value
+
   %hr
