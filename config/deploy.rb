@@ -4,7 +4,7 @@ lock '3.6.1'
 set :application, 'AzyzaSite'
 set :repo_url, 'https://github.com/medaved/azyzasite.git'
 application = 'AzyzaSite'
-set :rvm_type, :multiuser
+set :rvm_type, :user
 set :rvm_ruby_version, '2.3.0-p0'
 set :deploy_to, '/mnt/temp/www/apps/AzyzaSite'
 
