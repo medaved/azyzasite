@@ -16,6 +16,6 @@ class ApplicationController < ActionController::Base
     redirect_to :back
   end
   def set_section_name
-        @section = I18n.t("sections.#{ controller_path}")
+       @section = I18n.t("sections.#{controller_path}")
   end
 end
