@@ -22,4 +22,8 @@ class Gallery < ApplicationRecord
   #   sort_by :position           # Add Default sorting
   #   sort_reverse false          # sort position increasing ('asc')
   # end
+
+  def create_associated_image(image)
+    images.create(fileimage: image)
+  end
 end

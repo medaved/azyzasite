@@ -14,7 +14,7 @@
 
 class Image < ActiveRecord::Base
   acts_as_list scope: :gallery_id
-  belongs_to :gallery
   mount_uploader :fileimage, ImageUploader#, :mount_on => :
-  validates :name, presence: true
+  belongs_to :gallery
+  #validates :name, presence: true
 end
