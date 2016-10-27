@@ -3,5 +3,5 @@
   - @images.each do |image|
    .col-xs-12.col-sm-4.col-md-3.col-lg-3
     - if image.fileimage.present?
-     = link_to image.fileimage.url, class: "img-thumbnail", data: { title: CGI::escapeHTML(image.caption), lightbox: @gallery.name } do
+     = link_to image.fileimage.url, class: "img-thumbnail", data: { title: CGI::escapeHTML(image.name), titleOpt: CGI::escapeHTML(image.caption), lightbox:  CGI::escapeHTML(@gallery.name) } do
       = image_tag image.fileimage.thumb.url , class: 'img-responsive'
