@@ -9,6 +9,7 @@ gem 'carrierwave-processing'
 gem 'coffee-rails', '~> 4.2'
 gem 'compass-rails'
 
+#gem 'devise'
 gem 'dropzonejs-rails'
 
 gem 'jbuilder', '~> 2.5'
@@ -22,7 +23,7 @@ gem 'pg' , '~> 0.18'
 gem 'page_title_helper', git: 'git://github.com/lwe/page_title_helper.git'
 
 gem 'rails', '~> 5.0.0'
-gem 'rails_admin_dropzone', git: 'git://github.com/luizpicolo/rails_admin_dropzone.git'
+gem 'rails_admin_dropzone'
 gem 'rails_admin_acts_as_list' # must be before rails_admin
 gem 'rails_admin', github: 'medaved/rails_admin'
 gem 'rack-pjax', github: 'medaved/rack-pjax'

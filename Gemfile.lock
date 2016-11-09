@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/luizpicolo/rails_admin_dropzone.git
-  revision: 7dd74964e4798e5c517384b714cb2fa17231e698
-  specs:
-    rails_admin_dropzone (1.0.8)
-      dropzonejs-rails (~> 0.7.3)
-      jquery-rails (>= 3.0, < 5)
-      simple_form (~> 3.2)
-
-GIT
   remote: git://github.com/lwe/page_title_helper.git
   revision: 36ff739fc12dcd74615f385e69ddcbe740f70e83
   specs:
@@ -248,6 +239,10 @@ GEM
       acts_as_list (>= 0.7)
       rails (>= 3.2)
       rails_admin (>= 0.4)
+    rails_admin_dropzone (1.0.8)
+      dropzonejs-rails (~> 0.7.3)
+      jquery-rails (>= 3.0, < 5)
+      simple_form (~> 3.2)
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
     railties (5.0.0)
@@ -342,7 +337,7 @@ DEPENDENCIES
   rails_12factor
   rails_admin!
   rails_admin_acts_as_list
-  rails_admin_dropzone!
+  rails_admin_dropzone
   remotipart!
   sass-rails (~> 5.0)
   spring
