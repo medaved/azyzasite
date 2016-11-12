@@ -1,5 +1,5 @@
 $main-color: #e5e5e5;
-$main-font-faq: 1.6em/1.1 Georgia;
+$main-font-faq: Georgia;
 
 #contacts{
   p{
@@ -59,6 +59,6 @@ fieldset{
   left: 170px;
 }
 .alert {
-  font: $main-font-faq ;
+  font-family: $main-font-faq ;
   color: #71716f;
 }

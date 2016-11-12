@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Mainfont";
-  src: url("fonts/main.ttf") format("truetype")
+  src: font-url(asset-path("main.ttf")) format("truetype");
 }
 $main-color: #e5e5e5;
 $main-font: Mainfont, sans-serif;
