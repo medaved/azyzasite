@@ -13,6 +13,8 @@ module Azyza
     # -- all .rb files in that directory are automatically loaded.
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.assets.enabled = true
+    config.assets.paths << "/app/assets/fonts"
   end
 
 end

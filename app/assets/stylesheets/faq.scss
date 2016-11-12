@@ -1,8 +1,8 @@
-@import "compass/css3/animation";
-@import "compass/css3";
+/*@import "compass/css3/animation";
+@import "compass/css3";*/
 
-$main-font: 1.6em/1.1 mainfont;
-$main-font-faq: 1.6/1.1 Georgia;
+$main-font: Mainfont, sans-serif;
+$main-font-faq: verdana, arial, helvetica, sans-serif;
 #faq blockquote {
   margin-bottom: 15px;
   p {
@@ -20,13 +20,13 @@ $main-font-faq: 1.6/1.1 Georgia;
 
     margin-top: 5px;
     quest{
-      font: $main-font-faq;
+      font-family: $main-font-faq;
       font-size: 18px;
       /*font-style: oblique;*/
       margin-top: 50px;
     }
     answer{
-      font: $main-font-faq;
+      font-family: $main-font-faq;
       font-size: 13px;
      /* font-style: oblique;*/
     }
@@ -36,38 +36,59 @@ $main-font-faq: 1.6/1.1 Georgia;
   img {
     position: relative;
     display: block;
+    margin-left:auto;
+    margin-right: auto;
   }
   hr {
     width: 320px;
   }
   p {
-    font: $main-font-faq;
+    position: relative;
+    display: block;
+    font-family: $main-font-faq;
     font-size: 13px;
    /* font-style: oblique;*/
     margin-top: 10px;
+    margin-left:auto;
+    margin-right: auto;
   }
+  margin-left:auto;
+  margin-right: auto;
 }
 #faq-img-inst{
   width: 50%;
   height: 50%;
   position: relative;
-  left: 88px;
+  margin-left:auto;
+  margin-right: auto;
   margin-bottom: -30px;
+  display: block;
 }
 
 /*Slider on FAQ page. source https://habrahabr.ru/post/143025/ */
+
+#content-slider{
+  margin-left:auto;
+  margin-right: auto;
+
+}
 #slider a  {
   color: #000;
   transition: color 0.7s ease-in 0.3s;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
-#slider a:hover {
-  color: #fff;
+#slider:hover {
+  box-shadow: 0 0 0 rgba(0,0,0,0.5);
+
+  a:hover {
+   color: #fff;
+  }
 }
 
 div {
   /*noinspection SassScssResolvedByNameOnly*/
-  @include animation(move 1s ease-in-out 0.5s 2 alternate);
+ /* @include animation(move 1s ease-in-out 0.5s 2 alternate);*/
 }
 
 #slider {

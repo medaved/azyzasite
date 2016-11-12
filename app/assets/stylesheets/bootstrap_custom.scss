@@ -1,10 +1,9 @@
 @font-face {
-  font-family: "mainfont";
-  src: font-url(asset-path("main.ttf"));
+  font-family: "Mainfont";
+  src: url("fonts/main.ttf") format("truetype")
 }
 $main-color: #e5e5e5;
-$main-font: 1.6em/1.1 mainfont;
-$main-font-faq: 1.6/1.1 Georgia;
+$main-font: Mainfont, sans-serif;
 /* Main layout options pages*/
 .logo_image {
   img{
@@ -19,13 +18,12 @@ $main-font-faq: 1.6/1.1 Georgia;
   text-align: center;
 }
 .navbar-nav li {
-  font: $main-font;
+  font-family: $main-font;
   font-size: 15px;
   float: none;
   display: inline-block;
 }
 .pluso {
-  size: 85px;
   padding: 0px 0;
   color: #999;
   text-align: center;
@@ -50,7 +48,7 @@ hr {
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  font: $main-font;
+  font-family: $main-font;
   color: $main-color;
   font-size: 15px;
   padding: .2em 0;
@@ -77,7 +75,6 @@ hr {
   margin: 0 -50% 0 0;
 }
 /*end line section name*/
-
 .img-thumbnail {
   position: relative;
   display: block;
@@ -87,25 +84,21 @@ hr {
   height: auto;
  border: 1px solid #ddd;
 }
-
 #galerryimagecontainer{
   max-width: 960px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
-
 #namegallery {
   font-family: mainfont;
 }
-
 #galerryimage{
   position: relative;
   display: block;
   margin-top: 15px;
   text-align: center;
 }
-
 .gallery-feed {
   position: relative;
   max-width: 960px;
@@ -115,11 +108,16 @@ hr {
 }
 .img-thumbnail:hover {
   border: 1px rgba(113, 113, 111, 0.85);
-
 }
 #contacts p{
-  font: $main-font-faq;
+  font-family: Georgia, Times, serif;
   font-size: 13px;
-  /*font-style: oblique;*/
   margin-top: 10px;
+}
+
+footer {
+  p{
+    font-size: 10px;
+    text-align: center;
+  }
 }

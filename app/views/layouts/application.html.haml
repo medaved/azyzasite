@@ -15,7 +15,6 @@
   = javascript_include_tag 'application', 'lightbox': 'reload'
 
   %div.container-fluid.row.logo_image
-    = render "layouts/metrika"
     = image_tag 'logo.jpg'
   %div.container-fluid.row
     = render "index/menu"
@@ -26,7 +25,14 @@
     %br
     %br
     = yield
-    %footer
     %hr
-    = render "index/profiles_social"
-
+    %footer
+      = render "index/profiles_social"
+      %p
+        © 2016
+        = succeed "." do
+          %a{:href => "https://vk.com/medaved"} Dmitry
+        All rights reserved.
+        = succeed "." do
+          %a{:href => "https://telegram.me/medaved"} Telegram ME
+      = render "layouts/metrika"
